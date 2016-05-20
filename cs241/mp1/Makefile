@@ -61,4 +61,3 @@ $(EXE2): $(OBJS_PART2:%.o=$(OBJS_DIR)/%-release.o)
 .PHONY: clean
 clean:
 	rm -rf .objs $(EXES_STUDENT) $(EXES_STUDENT:%=%-debug)
-
