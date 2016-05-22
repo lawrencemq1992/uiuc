@@ -1,4 +1,5 @@
 # Given numRows, generate the first numRows of Pascal's triangle.
+
 class Solution(object):
     def generate(self, numRows):
         """
