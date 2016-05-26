@@ -2,6 +2,11 @@
 # For example:
 # Given num = 38, the process is like: 3 + 8 = 11, 1 + 1 = 2. Since 2 has only one digit, return it.
 
+# Solution:
+# 0 = 0
+# 9 = 9
+# o.w. abcd... = 100...a + 10...b + 1...c + ..., which equals a + b + ... when mod 9
+
 class Solution(object):
     def addDigits(self, num):
         """
