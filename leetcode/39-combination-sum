@@ -1,0 +1,21 @@
+class Solution(object):
+    def combinationSum(self, candidates, target):
+        """
+        :type candidates: List[int]
+        :type target: int
+        :rtype: List[List[int]]
+        """
+        def find_sum(start, num_set, current_sum):
+            if current_sum > target or start >= len(sorted_cand):
+                return
+            if current_sum  == target:
+                result.append(num_set)
+                return
+            find_sum(start, num_set + [sorted_cand[start]], current_sum + sorted_cand[start])
+            find_sum(start + 1, num_set, current_sum)
+            return
+            
+        result = []
+        sorted_cand = sorted(candidates)
+        find_sum(0, [], 0)
+        return result
